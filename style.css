@@ -24,6 +24,7 @@ a:hover {
 }
 
 .modal {
+    z-index: 10000;
     display: none;
     position: fixed;
     top: 0;

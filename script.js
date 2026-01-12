@@ -121,3 +121,8 @@ faqItems.forEach(item => {
         item.classList.toggle('active');
     });
 });
+
+const yearSpan = document.querySelector('#year');
+if (yearSpan) {
+    yearSpan.innerText = new Date().getFullYear();
+}
