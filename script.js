@@ -126,3 +126,14 @@ const yearSpan = document.querySelector('#year');
 if (yearSpan) {
     yearSpan.innerText = new Date().getFullYear();
 }
+
+function updateLinks() {
+  if (window.innerWidth > 768) {
+    document.querySelectorAll('a').forEach(link => {
+      link.href = "https://merrymi.pl/";
+    });
+  }
+}
+
+window.addEventListener("load", updateLinks);
+window.addEventListener("resize", updateLinks);
